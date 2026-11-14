@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-concrete: #607d8b;
+  --color-paper: #ffffff;
+  --color-charcoal: #212121;
+  --color-ink: #263238;
+  --color-flame: #ff5722;
+  --color-forest: #4caf50;
+  --color-gold: #ffc107;
+  --color-mist: #b0bec5;
+
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: #263238;
+    font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    background: #212121;
+    color: #f5f5f5;
+  }
+
+  ::selection {
+    background: #ff5722;
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, currentColor 1px, transparent 1px),
+      linear-gradient(to bottom, currentColor 1px, transparent 1px);
+    background-size: 3rem 3rem;
+  }
+}
