@@ -1,4 +1,5 @@
 import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 import Navbar from './components/Navbar'
 import WhatsAppFloat from './components/WhatsAppFloat'
 import About from './sections/About'
@@ -39,6 +40,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <BackToTop />
       <WhatsAppFloat />
     </div>
   )

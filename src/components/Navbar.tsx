@@ -61,7 +61,7 @@ export default function Navbar() {
             {dark ? <LuSun className="size-5" /> : <LuMoon className="size-5" />}
           </button>
           <a href="#contact" className={`${btnPrimary} hidden sm:inline-flex`}>
-            Konsultasi
+            Chat
             <LuArrowRight className="size-4" />
           </a>
           <button
